@@ -115,7 +115,8 @@ class Trader:
             self.exit_after = p["fallback_hold"] if self.fallback else p["hold"]
             if self.fallback:
                 stake = max(int(fees["min_notional_quote_units"]), int(int(account["cash_quote_units"]) * p["fallback_size"]))
-                order["max_slippage_bps"] = 10000
+                # The participation probe keeps the same bounded entry slippage.
+                # A rejected probe retries later; no price gap justifies chasing it.
             if stake >= int(fees["min_notional_quote_units"]):
                 return [{**order, "side": "buy", "notional_quote_units": str(stake)}]
         return []
