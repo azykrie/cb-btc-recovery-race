@@ -1,5 +1,7 @@
 # Measured results and limits
 
+Follow-up audit: see [THRESHOLD_AUDIT.md](THRESHOLD_AUDIT.md) for all 3x/4x/5x results, the 182 prior parameter-set count, explicit selection bias, and timestamp diagnostics. The original 3x bot is retained.
+
 Selected: reversion-recovery-wide. It has the lowest measured drawdown among
 the five finalists with positive dev PnL and nonnegative PnL at 1.5x costs.
 **No candidate satisfies the stronger requirement of a robust positive edge:**
