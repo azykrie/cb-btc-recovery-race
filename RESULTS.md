@@ -111,3 +111,5 @@ missing-bar or rejecting markets. No claim of likely race profitability is made.
 
 Public repository creation, About metadata, push and submission are left for
 the owner as requested. Nothing has been submitted and no quota was consumed.
+
+Risk audit: [RISK_AUDIT.md](RISK_AUDIT.md) compares 25%, 35% and 50% sizing on 1,500 synthetic paths (4,500 paired replays). All bootstrap medians are negative; retain 25% sizing and 5% kill. Cumulative totals: 186 configurations / 5,405 research replays. These are one-day conditional scenarios, not race forecasts.
